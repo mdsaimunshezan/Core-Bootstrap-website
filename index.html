@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <!-- Hover.css -->
+      <link rel="stylesheet" href="./css/hover-min.css">
+      <!-- Bootstrap Css -->
+      <link rel="stylesheet" href="./css/bootstrap.min.css">
+      <!-- Bootstrap Js -->
+      <script src="./js/bootstrap.min.js"></script>
+      <!-- FontAweson -->
+      <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+      <!-- Aos js -->
+    <script src="./js/aos.js"></script>
+      <!-- Aos css -->
+     <link rel="stylesheet" href="./css/aos.css">
+      <!-- Custon Css -->
+      <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+
+     <!-- Navber Start -->
+
+     <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <!-- Navber Brand -->
+        <a class="navbar-brand text-white" href="#">
+            Saimun's
+        </a>
+
+        <!---Responsive Icon-->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+         
+           <!-- Menu Item start-->
+          <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active hvr-wobble-horizontal" aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link hvr-wobble-horizontal" href="#servise">our servise</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link hvr-wobble-horizontal" href="#about">about us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link hvr-wobble-horizontal" href="#teame">our teame</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link hvr-wobble-horizontal" href="#clind">clind say</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link hvr-wobble-horizontal" href="#conteck">conteck us</a>
+            </li>
+           
+          </ul>
+
+      <!-- Menu Item End-->
+
+        
+          <form class="d-flex justify-content-center">
+           <button type="button" class="btn btn-info me-3  d-block  hvr-float-shadow" data-bs-toggle="modal" data-bs-target="#staticBackdrop">LOG IN</button>
+           <button type="button" class="btn btn-success hvr-pop" data-bs-toggle="modal" data-bs-target="#myLegel">REGESTION</button>
+         </form>
+        </div> <!---Navber Colllapes End-->
+      </div> <!---container End-->
+    </nav>
+
+    
+<!-- Modal Start -->
+
+<!-- Login -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Sign Up</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form action="">
+          <div class="mb-3">
+            <label for="" class="form-label"> <strong>E-mail :</strong> </label>
+            <input type="text" name="" id="" class="form-control">
+          </div>
+
+          <div class="mb-3">
+            <label for="" class="form-label"><strong>Password :</strong></label>
+            <input type="password" name="" id="" class="form-control">
+          </div>
+        </form>
+      </div> <!---Modal body End-->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-success d-block w-100">Submit !!</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Login End -->
+
+<!-- Regestion Start -->
+
+<div class="modal fade" id="myLegel" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Regestion</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form action="">
+          <div class="mb-2">
+            <label for="" class="form-label"> <strong>Name :</strong> </label>
+            <input type="text" name="" id="" class="form-control">
+          </div>
+
+          <div class="mb-2">
+            <label for="" class="form-label"><strong>Password :</strong></label>
+            <input type="password" name="" id="" class="form-control">
+          </div>
+          <div class="mb-2">
+            <label for="" class="form-label"><strong>E-mail :</strong></label>
+            <input type="password" name="" id="" class="form-control">
+          </div>
+          <div class="mb-2">
+            <label for="" class="form-label"><strong>Message :</strong></label>
+           <textarea name="" id="" cols="30" rows="3" class="form-control"></textarea>
+          </div>
+          <div class="form-check form-check-inline mb-2">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+            <label class="form-check-label" for="inlineRadio1">
+              Male
+            </label>
+          </div>
+          <div class="form-check form-check-inline mb-2">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+            <label class="form-check-label" for="inlineRadio2">
+              Fe-mail
+            </label>
+          </div>
+
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+              Agree all condition
+            </label>
+          </div>
+          
+      
+        </form>
+      </div> <!---Modal body End-->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-success d-block w-100">Submit !!</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Regestion End -->
+
+<!-- Modal End -->
+
+     <!-- Navber End -->
+
+     <!-- Slider Start -->
+
+     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+
+      <!--Start carosol Indecator-->
+      <div class="carousel-indicators" id="home">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+      </div> 
+      <!--End carosol Indecator-->
+
+      <div class="carousel-inner box">
+
+        <!--colorsor image Start-->
+        <div class="carousel-item active">
+          <img src="./Images/banner-3.jpg" class="w-100" alt="...">
+          <div class="carosol_caption d-none d-md-block">
+            <h5 class="text-white" data-aos="fade-down" data-aos-duration="1000">Welcome to saimun's</h5>
+            <p data-aos="fade-left" data-aos-duration="1000">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni pariatur nemo omnis quaerat tempore aut, porro velit nulla quod similique optio quos corrupti eos minus animi impedit atque voluptatibus odio!</p>
+          </div>
+        </div> 
+        <!--colorsor image End-->
+
+        <!--colorsor image Start-->
+        <div class="carousel-item">
+          <img src="./Images/banner-2.jpg" class="w-100" alt="...">
+          <div class="carosol_caption d-none d-md-block">
+            <h5 data-aos="fade-down" data-aos-duration="3000">we provide web servises</h5>
+            <p data-aos="fade-left" data-aos-duration="1000">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni pariatur nemo omnis quaerat tempore aut, porro velit nulla quod similique optio quos corrupti eos minus animi impedit atque voluptatibus odio!</p>
+          </div>
+        </div> 
+        <!--colorsor image End-->
+
+        <!--colorsor image Start-->
+        <div class="carousel-item">
+          <img src="./Images/banner-1.jpg" class="w-100" alt="...">
+          <div class="carosol_caption d-none d-md-block">
+            <h5 data-aos="fade-down" data-aos-duration="1000">we blive beter servises</h5>
+            <p data-aos="fade-left" data-aos-duration="1000">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni pariatur nemo omnis quaerat tempore aut, porro velit nulla quod similique optio quos corrupti eos minus animi impedit atque voluptatibus odio!</p>
+          </div>
+        </div> 
+        <!--colorsor image End-->
+
+        <!--colorsor image Start-->
+        <div class="carousel-item">
+          <img src="./Images/banner-4.jpg" class="w-100" alt="...">
+          <div class="carosol_caption d-none d-md-block">
+            <h5 data-aos="fade-down" data-aos-duration="1000">fast and responsive web servises</h5>
+            <p data-aos="fade-left" data-aos-duration="1000">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni pariatur nemo omnis quaerat tempore aut, porro velit nulla quod similique optio quos corrupti eos minus animi impedit atque voluptatibus odio!</p>
+          </div>
+        </div> 
+        <!--colorsor image End-->
+
+        <!--colorsor image Start-->
+        <div class="carousel-item">
+          <img src="./Images/banner-5.jpg" class="w-100" alt="...">
+          <div class="carosol_caption d-none d-md-block">
+            <h5 data-aos="fade-down" data-aos-duration="1000">you can trast this teame</h5>
+            <p data-aos="fade-left" data-aos-duration="1000">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni pariatur nemo omnis quaerat tempore aut, porro velit nulla quod similique optio quos corrupti eos minus animi impedit atque voluptatibus odio!</p>
+          </div>
+        </div> 
+        <!--colorsor image End-->
+
+        <!--colorsor image Start-->
+        <div class="carousel-item ">
+          <img src="./Images/banner-6.jpg" class="w-100" alt="...">
+          <div class="carosol_caption d-none d-md-block">
+            <h5 data-aos="fade-down" data-aos-duration="1000">Welcome to my Website</h5>
+            <p data-aos="fade-left" data-aos-duration="1000">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni pariatur nemo omnis quaerat tempore aut, porro velit nulla quod similique optio quos corrupti eos minus animi impedit atque voluptatibus odio!</p>
+          </div>
+        </div> 
+        <!--colorsor image End-->
+
+      </div> <!---Corosol Inner End-->
+
+        <!-- Corosol Next Prev Button Start-->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+         <span class="icon_slider">
+            <i class="fas fa-angle-left"></i>
+         </span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="icon_slider">
+            <i class="fas fa-angle-right"></i>
+         </span>
+          <span class="visually-hidden">Next</span>
+        </button>
+        <!-- Corosol Next Prev Button End-->
+
+
+    </div> <!---Corosol End-->
+
+     <!-- Sleder End -->
+
+
+     <!----Servise Section Start -->
+
+      <section class="servise" id="servise">
+       <div class="container ">
+        <div class="servise_main_title mb-5">
+          <div class="servise_title" data-aos="flip-right"  data-aos-duration="1000">
+            our servises
+        </div>
+       </div>
+
+       <!-- Card  Start-->
+
+         <div class="row">
+            <div class="col-sm-12 col-md-4  hvr-float-shadow" data-aos="fade-right" data-aos-duration="1000">
+              <div class="card text-center shadow-lg" >
+                <img src="./Images/card-1.jpg" alt="">
+                <div class="card-body">
+                    <div class="card-title h3">
+                        web deagine
+                    </div> <!----Card Title End-->
+                    <div class="card-text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere ducimus voluptas magni repudiandae quos perferendis consequuntur, eveniet itaque accusantium quidem dolor esse perspiciatis distinctio ipsam vel alias delectus facilis eligendi ex quaerat numquam dignissimos praesentium? </p>
+                    </div> <!--Card text End-->
+                    <a href="" class="btn btn-success d-block mt-4">bey now !!</a>
+                </div> <!----Card Body End-->
+            </div> <!---Card-->
+            </div> <!---- col End-->
+
+            <div class="col-sm-12 col-md-4  hvr-float-shadow" data-aos-anchor-placement="top-bottom" data-aos="fade-up" data-aos-duration="2000">
+              <div class="card text-center shadow-lg" >
+                <img src="./Images/card-2.jpg" alt="">
+                <div class="card-body">
+                    <div class="card-title h3">
+                       psd to html
+                    </div> <!----Card Title End-->
+                    <div class="card-text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere ducimus voluptas magni repudiandae quos perferendis consequuntur, eveniet itaque accusantium quidem dolor esse perspiciatis distinctio ipsam vel alias delectus facilis eligendi ex quaerat numquam dignissimos praesentium? </p>
+                    </div> <!--Card text End-->
+                    <a href="" class="btn btn-success d-block mt-4">bey now !!</a>
+                </div> <!----Card Body End-->
+            </div> <!---Card-->
+            </div> <!----col End-->
+
+            <div class="col-sm-12 col-md-4  hvr-float-shadow">
+              <div class="card text-center shadow-lg" data-aos="fade-left" data-aos-duration="1000">
+                <img src="./Images/card-3.jpg" alt="">
+                <div class="card-body">
+                    <div class="card-title h3">
+                      font devlopment
+                    </div> <!----Card Title End-->
+                    <div class="card-text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere ducimus voluptas magni repudiandae quos perferendis consequuntur, eveniet itaque accusantium quidem dolor esse perspiciatis distinctio ipsam vel alias delectus facilis eligendi ex quaerat numquam dignissimos praesentium? </p>
+                    </div> <!--Card text End-->
+                    <a href="" class="btn btn-success d-block mt-4">bey now !!</a>
+                </div> <!----Card Body End-->
+            </div> <!---Card-->
+            </div> <!----col End-->
+
+         </div> <!----Row End-->
+
+       <!-- Card  End-->
+
+       </div> <!---Container End-->
+
+       
+
+      </section>
+
+     <!-- Servise Section End -->
+
+     <!-- About section Start -->
+
+        <section class="about us" id="about">
+         <div class="container">
+          <div class="servise_main_title mb-3">
+            <div class="servise_title" data-aos="zoom-in-up">
+              about us
+           </div>
+         </div> <!--about titel End-->
+
+         <nav>
+          <div class="nav d-flex justify-content-center" id="nav-tab" role="tablist">
+            <button class="nav-link active btn-info px-5 mx-3 hvr-curl-top-left" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">address</button>
+            <button class="nav-link btn-success px-5 mx-3 hvr-curl-top-left" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">poject complted</button>
+            <button class="nav-link btn-warning px-5 mx-3 hvr-curl-top-left" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">happy clind</button>
+          </div>
+        </nav>
+        <div class="tab-content" id="nav-tabContent">
+          <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+            
+              <div class="row  mt-5">
+                <div class="col-sm-12 col-md-5 d-flex  align-items-center justify-content-center">
+                   <div class="address">
+                     <h3>south sagardi , barisal  </h3>
+                     <h4> <span> phone: </span> 01303442031  </h4>
+                     <h5> <span> E-mail: </span> saimunshezan@gmail.com  </h5>
+                   </div>
+                </div>
+                <div class="col-sm-12 col-md-7">
+                    <div class="address_img">
+                      <img src="./Images/banner-3.jpg" class="img-fluid rounded" alt="">
+                    </div>
+
+
+                </div>
+              </div>
+
+          </div>
+          <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+            <div class="completed_poject">
+              <div class="row">
+                  <div class="col-sm-12 col-md-4 ">
+                     <div class="score_corcle border border-3 border-primary rounded text-center mt-5 py-5 ">
+                    <h2>web degine</h2>
+                   
+                      <h4>120</h4>
+                    </div>
+                  </div>
+                  <div class="col-sm-12 col-md-4 ">
+                     <div class="score_corcle border border-3 border-info rounded text-center mt-5 py-5">
+                    <h2>psd to html</h2>
+                   
+                      <h4>35</h4>
+                    </div>
+                  </div>
+                  <div class="col-sm-12 col-md-4 ">
+                     <div class="score_corcle border border-3 border-danger rounded text-center mt-5 py-5">
+                    <h2> end development</h2>
+                   
+                      <h4>44</h4>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+            <div class="completed_poject">
+              <div class="row">
+                  <div class="col-sm-12 col-md-4 ">
+                     <div class="score_corcle border border-3 border-primary rounded text-center mt-5 py-5 ">
+                    <h2>web degine</h2>
+                   
+                      <h4>110</h4>
+                    </div>
+                  </div>
+                  <div class="col-sm-12 col-md-4 ">
+                     <div class="score_corcle border border-3 border-info rounded text-center mt-5 py-5">
+                    <h2>psd to html</h2>
+                   
+                      <h4>20</h4>
+                    </div>
+                  </div>
+                  <div class="col-sm-12 col-md-4 ">
+                     <div class="score_corcle border border-3 border-danger rounded text-center mt-5 py-5">
+                    <h2> end development</h2>
+                   
+                      <h4>10</h4>
+                    </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+
+         </div> <!---continer End-->
+
+
+        </section> 
+
+     <!-- About section End -->
+
+
+     <!-- Team section Start -->
+
+    <section class="teame" id="teame">
+     <div class="container">
+        <div class="servise_main_title mb-5">
+          <div class="servise_title" data-aos="zoom-out-down" >
+            our teame
+        </div>
+      </div>
+
+      <div class="team_section">
+        <div class="row">
+          <div class="col-sm-12 col-md-4" data-aos="fade-down-right" data-aos-duration="1000">
+            <div class="card shadow-lg hvr-underline-from-left hvr-float">
+              <img src="./Images/card-1.jpg" alt="" class="img-fluid">
+              <div class="card-body">
+                <div class="card-title text-center">
+                    <h3>web deginer</h3>
+                </div>
+                <div class="card-text">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque magni, et aperiam explicabo molestiae unde eum perferendis natus ad dolor hic deleniti officia incidunt. Blanditiis voluptas deserunt repudiandae vitae suscipit.</p>
+                </div>
+                <div class="socile_icon">
+                  <div class="facebook">  <a href=""> <i class="fab fa-facebook"></i> </a>  </div>
+                  <div class="youtube"> <a href=""> <i class="fab fa-youtube"></i> </a> </div>
+                  <div class="twiter"> <a href=""> <i class="fab fa-twitter"></i>  </a></div>
+                </div>
+              </div>
+            </div>
+          </div> <!--team col-->
+
+          <div class="col-sm-12 col-md-4" data-aos-anchor-placement="top-bottom" data-aos="fade-up" data-aos-duration="2000">
+            <div class="card shadow-lg hvr-underline-from-left hvr-float">
+              <img src="./Images/card-2.jpg" alt="" class="img-fluid">
+              <div class="card-body">
+                <div class="card-title text-center">
+                    <h3>web devloper</h3>
+                </div>
+                <div class="card-text">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque magni, et aperiam explicabo molestiae unde eum perferendis natus ad dolor hic deleniti officia incidunt. Blanditiis voluptas deserunt repudiandae vitae suscipit.</p>
+                </div>
+                <div class="socile_icon">
+                  <div class="facebook">  <a href=""> <i class="fab fa-facebook"></i> </a>  </div>
+                  <div class="youtube"> <a href=""> <i class="fab fa-youtube"></i> </a> </div>
+                  <div class="twiter"> <a href=""> <i class="fab fa-twitter"></i>  </a></div>
+                </div>
+              </div>
+            </div>
+          </div> <!--team col-->
+
+          <div class="col-sm-12 col-md-4" data-aos="fade-down-left" data-aos-duration="1000">
+            <div class="card shadow-lg hvr-underline-from-left hvr-float">
+              <img src="./Images/card-3.jpg" alt="" class="img-fluid">
+              <div class="card-body">
+                <div class="card-title text-center">
+                    <h3>web deginer</h3>
+                </div>
+                <div class="card-text">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque magni, et aperiam explicabo molestiae unde eum perferendis natus ad dolor hic deleniti officia incidunt. Blanditiis voluptas deserunt repudiandae vitae suscipit.</p>
+                </div>
+                <div class="socile_icon">
+                  <div class="facebook">  <a href=""> <i class="fab fa-facebook"></i> </a>  </div>
+                  <div class="youtube"> <a href=""> <i class="fab fa-youtube"></i> </a> </div>
+                  <div class="twiter"> <a href=""> <i class="fab fa-twitter"></i>  </a></div>
+                </div>
+              </div>
+            </div>
+          </div> <!--team col-->
+        </div> <!--row-->
+      </div> <!--texa section-->
+
+
+
+     </div> <!---container End-->
+    </section>
+
+     <!-- Team section End -->
+
+
+
+
+
+        <!-- Clind section Start -->
+
+    <section class="clind_say" id="clind">
+      <div class="container">
+         <div class="servise_main_title mb-5">
+           <div class="servise_title" data-aos="zoom-in-down">
+            our clind say
+         </div>
+       </div>
+
+
+        <!-- Slider Start -->
+
+     <div id="myClind" class="carousel slide clind_main" data-bs-ride="carousel">
+
+      <!--Start carosol Indecator-->
+   
+     <div class="clind_say_indecator">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#myClind" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#myClind" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#myClind" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#myClind" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#myClind" data-bs-slide-to="4" aria-label="Slide 5"></button>
+        <button type="button" data-bs-target="#myClind" data-bs-slide-to="5" aria-label="Slide 6"></button>
+      </div> 
+     </div>
+   
+      <!--End carosol Indecator-->
+
+      <div class="carousel-inner">
+
+        <!--colorsor image Start-->
+        <div class="carousel-item active">
+         <div class="clind_img">
+          <img src="./Images/banner-1.jpg" alt="..." class="img-fluid">
+         </div>
+          <div class="clind_say text-center">
+            <h5>Sabbir rahaman ruman</h5>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni pariatur nemo omnis quaerat tempore aut, porro velit nulla quod similique optio quos corrupti eos minus animi impedit atque voluptatibus odio!</p>
+          </div>
+        </div> 
+        <!--colorsor image End-->
+
+        <!--colorsor image Start-->
+        <div class="carousel-item ">
+          <div class="clind_img">
+            <img src="./Images/banner-2.jpg" alt="..." class="img-fluid">
+           </div>
+          <div class="clind_say text-center">
+            <h5>Saimun islam Shezan</h5>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni pariatur nemo omnis quaerat tempore aut, porro velit nulla quod similique optio quos corrupti eos minus animi impedit atque voluptatibus odio!</p>
+          </div>
+        </div> 
+        <!--colorsor image End-->
+
+        <!--colorsor image Start-->
+        <div class="carousel-item">
+          <div class="clind_img">
+            <img src="./Images/banner-3.jpg" alt="..." class="img-fluid">
+           </div>
+          <div class="clind_say text-center">
+            <h5>Tamim iqbal</h5>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni pariatur nemo omnis quaerat tempore aut, porro velit nulla quod similique optio quos corrupti eos minus animi impedit atque voluptatibus odio!</p>
+          </div>
+        </div> 
+        <!--colorsor image End-->
+
+        <!--colorsor image Start-->
+        <div class="carousel-item ">
+          <div class="clind_img">
+            <img src="./Images/banner-4.jpg" alt="..." class="img-fluid">
+           </div>
+          <div class="clind_say text-center">
+            <h5>Adul Haque</h5>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni pariatur nemo omnis quaerat tempore aut, porro velit nulla quod similique optio quos corrupti eos minus animi impedit atque voluptatibus odio!</p>
+          </div>
+        </div> 
+        <!--colorsor image End-->
+
+        <!--colorsor image Start-->
+        <div class="carousel-item ">
+          <div class="clind_img">
+            <img src="./Images/banner-5.jpg" alt="..." class="img-fluid">
+           </div>
+          <div class="clind_say text-center">
+            <h5>Mostafizur Rahaman</h5>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni pariatur nemo omnis quaerat tempore aut, porro velit nulla quod similique optio quos corrupti eos minus animi impedit atque voluptatibus odio!</p>
+          </div>
+        </div> 
+        <!--colorsor image End-->
+
+        <!--colorsor image Start-->
+        <div class="carousel-item ">
+          <div class="clind_img">
+            <img src="./Images/banner-3.jpg" alt="..." class="img-fluid">
+           </div>
+          <div class="clind_say text-center">
+            <h5>MD.abdul Rahim</h5>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni pariatur nemo omnis quaerat tempore aut, porro velit nulla quod similique optio quos corrupti eos minus animi impedit atque voluptatibus odio!</p>
+          </div>
+        </div> 
+        <!--colorsor image End-->
+
+      </div> <!---Corosol Inner End-->
+
+        <!-- Corosol Next Prev Button Start-->
+      <div class="clind_say_button_icon">
+        <button class="carousel-control-prev" type="button" data-bs-target="#myClind" data-bs-slide="prev">
+          <span class="icon_slider">
+             <i class="fas fa-angle-left"></i>
+          </span>
+           <span class="visually-hidden">Previous</span>
+         </button>
+ 
+         <button class="carousel-control-next" type="button" data-bs-target="#myClind" data-bs-slide="next">
+           <span class="icon_slider">
+             <i class="fas fa-angle-right"></i>
+          </span>
+           <span class="visually-hidden">Next</span>
+         </button>
+      </div>
+        <!-- Corosol Next Prev Button End-->
+
+
+    </div> <!---Corosol End-->
+
+     <!-- Sleder End -->
+       
+ 
+      </div> <!---container End-->
+     </section>
+ 
+      <!-- Clind section End -->
+
+
+
+
+     <!-- Conteck Section -->
+
+
+      <form action="">
+        <div class="container" id="conteck">
+          <div class="servise_main_title mb-5">
+            <div class="servise_title" data-aos="zoom-in-up">
+              conteck us
+          </div>
+        </div>
+          <div class="card card-body shadow-lg">
+           
+            <div class="mb-3">
+              <label for="" class="form-label"> <strong>Name:</strong> </label>
+              <input type="text" name="" id="" class="form-control">
+            </div>
+            <div class="mb-3">
+              <label for="" class="form-label"> <strong>E-mail:</strong> </label>
+              <input type="text" name="" id="" class="form-control">
+            </div>
+            <div class="mb-4">
+              <label for="" class="form-label"> <strong>Messae</strong> </label>
+              <textarea name="" id="" cols="5" rows="5" class="form-control"></textarea>
+            </div>
+          
+            <button  class="btn btn-success w-25 hvr-wobble-horizontal ">Send</button>
+          
+          </div>
+        </div>
+      </form>
+
+
+     <!-- Conteck Section End-->
+
+
+
+
+
+
+      <footer class="container-fluid footer text-center p-3">
+         
+                <h4><i class="fas fa-copyright"></i> by Md Saimun Shezan</h4>
+         
+      </footer>
+  
+
+    
+
+
+
+      <script>
+        AOS.init();
+      </script>
+</body>
+</html>                                     

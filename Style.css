@@ -1,0 +1,402 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+:root {
+    --nav_bg_color: #00bcd4;
+    --white: white;
+    --orange_red:orangered;
+    --aqua:aqua;
+    --overly:rgba(0,0,0,.5);
+    --black:black;
+    --navy:navy;
+    --lightgray:lightgray;
+    --green:green;
+    --gray:gray;
+    --blue:blue;
+    --red:red;
+
+
+}
+
+/*===================================
+             Menu Section
+=====================================*/
+
+.bg-light {
+    background-color:var(--nav_bg_color)!important;
+}
+.navbar-light .navbar-nav .nav-link.active {
+    color: var(--aqua);
+}
+.navbar-light .navbar-nav .nav-link {
+    color: var(--orange_red);
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+    color: var(--white);
+}
+
+
+/* ============================
+        Slider Section
+================================*/
+
+.box .carousel-item {
+    position: relative;
+    width: 100%;
+    height:100%;
+}
+.box .carousel-item::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: var(--overly);
+
+}
+ .carousel-indicators [data-bs-target] {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--aqua);
+    border-bottom: 0 !important;
+    border-top: 0 !important;
+    transition: 1s !important;
+}
+.carousel-indicators .active {
+    transform: scale(1.5);
+    background: var(--orange_red);
+   
+}
+.box .carosol_caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: var(--white);
+    
+}
+.box .carosol_caption h5 {
+    color: var(--orange_red);
+    font-size: 40px;
+
+}
+.icon_slider {
+    background: var(--white);
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    
+}
+.fa-angle-right,  
+.fa-angle-left {
+    font-size: 40px;
+    color: var(--black);
+  
+  
+}
+.carousel-control-next, .carousel-control-prev {
+    opacity: 1;
+}
+
+
+/*===============================
+             servise Section 
+==================================*/
+
+.servise_main_title {
+    text-align: center;
+}
+.servise_title {
+    font-size: 40px;
+    display: inline-block;
+    position: relative;
+    text-transform: uppercase;
+    color: var(--orange_red);
+    margin-top: 100px;
+    padding:50px 0px;
+    
+}
+.servise_title::after {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 6px;
+    background: var(--nav_bg_color);
+    top: 50%;
+    left: calc(100% + 10px );
+    transform: translateY(-50%);
+
+}
+.servise_title::before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 6px;
+    background: var(--nav_bg_color);
+    top: 50%;
+    right: calc(100% + 10px);
+    transform: translateY(-50%);
+
+}
+.card .card-title {
+    text-transform: uppercase;
+    color: var(--orange_red);
+    margin-bottom: 20px;
+}
+.card .card-text {
+    text-align: justify;
+    
+}
+
+
+/*===============================
+          about us
+==================================*/
+
+.nav .nav-link .active {
+    border-bottom: red !important;
+}
+
+.address h3 {
+    color: var(--orange_red);
+    text-transform: uppercase;
+    font-size: 30px;
+  
+}
+.address span {
+    color: var(--navy);
+    
+}
+.score_corcle {
+    background: var(--lightgray);
+}
+.score_corcle h2 {
+    color: var(--orange_red);
+    text-transform: uppercase;
+}
+.score_corcle h4 {
+    color: var(--navy);
+}
+
+
+
+
+/*===============================
+            team section
+==================================*/
+
+.socile_icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+.socile_icon  .facebook a,
+.socile_icon  .youtube a,
+.socile_icon  .twiter  a{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 5px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s linear;
+   
+}
+.socile_icon .youtube a{
+    background: var(--red);
+    color: var(--white);
+    font-size: 30px;
+    text-decoration: none;
+   
+   
+}
+
+.socile_icon .facebook a{
+    background: var(--blue);
+    color: var(--white);
+    font-size: 40px;
+    text-decoration: none;
+}
+.socile_icon .twiter a{
+    background: var(--blue);
+    color: var(--white);
+    font-size: 30px;
+    text-decoration: none;
+}
+.socile_icon .youtube a:hover,
+.socile_icon .facebook a:hover,
+.socile_icon .twiter a:hover{
+    transform: scale(1.2) rotate(360deg);
+
+}
+
+
+
+/*===============================
+            clind say
+==================================*/
+
+.clind_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  
+}
+.clind_img img{
+    width: 300px;
+    height:300px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.clind_say_button_icon .icon_slider {
+    background: var(--blue);
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.clind_say_button_icon .fa-angle-left ,
+.clind_say_button_icon .fa-angle-right {
+    color: var(--white);
+}
+.clind_say_indecator .carousel-indicators {
+    position: absolute;
+    bottom: -30px;
+   
+  
+}
+.clind_main {
+    margin-bottom: 80px;
+}
+.clind_say {
+    padding-top: 30px;
+}
+.clind_say h5 {
+    color: var(--orange_red);
+    font-size: 30px;
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+.clind_say p {
+    padding-bottom: 10px 0px;
+    font-size: 20px;
+    color: var(--gray);
+}
+
+
+
+
+
+
+/*===============================
+            clind say
+==================================*/
+
+
+
+.footer {
+    background-color: var(--black);
+    font-size: 15px;
+    margin-top: 50px;
+}
+.footer h4 {
+    font-size: 20px;
+    color: var(--gray);
+}
+
+
+
+
+
+
+
+
+
+/*======================================
+             responsive
+========================================== */
+
+/* mobile devise */
+
+@media (max-width:500px){
+    .icon_slider {
+        background: var(--white);
+        width: 45px;
+        height: 45px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+    }
+    .servise_title {
+        margin-top: 50px;
+        font-size: 29px;
+        padding: 25px 0px;
+    }
+    .servise_title::before {
+        content: "";
+        position: absolute;
+        width: 70px;
+        height: 4px;
+        background: var(--nav_bg_color);
+        top: 50%;
+        right: calc(100% + 10px);
+        transform: translateY(-50%);
+    }
+    .servise_title::after {
+        content: "";
+        position: absolute;
+        width: 70px;
+        height: 4px;
+        background: var(--nav_bg_color);
+        top: 50%;
+        right: calc(100% + 10px);
+        transform: translateY(-50%);
+    }
+    .nav-link {
+        margin: 5px 0px;
+    }
+    .clind_img img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+    .clind_say h5 {
+        color: var(--orange_red);
+        font-size: 16px;
+        font-weight: 700;
+        padding-bottom: 10px;
+    }
+    .clind_say p {
+        font-size: 15px;
+        color: var(--gray);
+    }
+    .clind_say_button_icon .icon_slider {
+        background: var(--blue);
+        width: 45px;
+        height: 45px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+    }
+}
